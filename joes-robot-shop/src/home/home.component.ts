@@ -4,9 +4,13 @@ import { Component } from '@angular/core';
   selector: 'bot-home',
   standalone: true,
   imports: [],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+  template: ` <p class="red">Inline home works!</p> `,
+  styles: [
+    `
+      .red {
+        color: red;
+      }
+    `,
+  ],
 })
-export class HomeComponent {
-
-}
+export class HomeComponent {}
