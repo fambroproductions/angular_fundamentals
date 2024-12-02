@@ -191,6 +191,7 @@ export class CatalogComponent {
   }
 
   getImageUrl(product: IProduct) {
+    if (!product) return '';
     return '/images/robot-parts/' + product.imageName;
   }
 
