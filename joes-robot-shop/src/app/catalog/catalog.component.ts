@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { IProduct } from './product.model';
-import { NgFor } from '@angular/common';
+import { NgFor, NgIf } from '@angular/common';
 @Component({
   selector: 'bot-catalog',
   standalone: true,
-  imports: [NgFor],
+  imports: [NgFor, NgIf],
   templateUrl: './catalog.component.html',
   styleUrl: './catalog.component.css',
 })
